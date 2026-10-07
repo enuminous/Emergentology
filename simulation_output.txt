@@ -1,0 +1,24 @@
+Toy Emergentology simulation
+step,x,coherence,W_E
+0,-1.100000,0.172000,0.433675
+1,-0.470000,0.238240,0.427915
+2,-0.029000,0.299181,0.422616
+3,0.279700,0.355246,0.417740
+4,0.495790,0.406827,0.413255
+5,0.647053,0.454280,0.409129
+6,0.752937,0.497938,0.405333
+7,0.827056,0.538103,0.401840
+8,0.878939,0.575055,0.398627
+9,0.915257,0.609050,0.395671
+10,0.940680,0.640326,0.392951
+11,0.958476,0.669100,0.390449
+Spreadsheet runtime warmup failed during python startup
+Traceback (most recent call last):
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/patches/warm_spreadsheet_runtime_on_startup.py", line 26, in warm_spreadsheet_runtime_on_startup
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 785, in warm_spreadsheet_runtime
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 720, in _warm_feature_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/spreadsheet_warmup.py", line 704, in _warm_collaboration_flows
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/generated/interface/models.py", line 32317, in hydrate_crdt_from_proto
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/remote.py", line 749, in __call__
+  File "/tmp/tmp.L2TH2Y5coc/artifact_tool_v2-2.8.22/artifact_tool/rpc/client.py", line 150, in call
+artifact_tool.rpc.client.RemoteError: hydrateCrdtFromProto requires an empty collaborative document.
