@@ -18,13 +18,9 @@ def ForwardInvariant {State : Type*} (sys : System State) (A : Set State) : Prop
 
 theorem fixed_point_stays {State : Type*} (sys : System State)
     (a : State) (h : IsFixedPoint sys a) :
-    ∀ n : ℕ, Function.iterate sys.step n a = a := by
+    ∀ n : ℕ, Nat.iterate sys.step n a = a := by
   intro n
-  induction n with
-  | zero => rfl
-  | succ n ih =>
-      rw [Function.iterate_succ_apply, ih]
-      exact h
+  exact Function.iterate_fixed h n
 
 /-- A minimal discrete emergence observation. -/
 structure EmergenceStep where
